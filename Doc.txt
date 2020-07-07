@@ -25,3 +25,13 @@ Restful APIs are stateless backends
     5- Uniform Interface: Resources are identified in request, transfered data is decoupled from db schema
             Self-descriptive message links to further resources.
     6- Code on demand(optional): Executable code should be transfered.
+
+
+
+    if a user doesn't want to restart the server again and again then he can use the dependency known as 
+    nodemon and to install it we pass the command on cmd
+       npm install --save-dev nodemon
+
+
+    for the log we use morgan
+    npm install --save morgan
