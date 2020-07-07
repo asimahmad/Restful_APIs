@@ -1,0 +1,27 @@
+Rest: Representational State transfer
+
+If a browser requests and server sends some html pages that is a traditional webpage
+
+When a mobile app(Client) stores and fetch the data but doesn't use/render html and if a Client(Code)
+then also we don't need the html pages(Using third party features)
+Only one page web application then also we'll go with Restful APIs
+Restful APIs are stateless backends
+
+
+                               Restful Server
+            /users              /posts                        /products
+    Get Post Delete          Get Post Patch                  Get
+
+                               
+                               Ajax request(Current page is still running) and get the response
+                               
+                               Client
+
+    Restful Constraints
+    1- Client-Server Architecture: Separation concerns Restful API should not care about the UI
+    2- stateless: No-Client context( eg. Session) is stored on the server
+    3- Cacheability: Response must define themselves as cacheable or non-cacheable
+    4- Layered System: Intermediate server maybe used without the Client knowing about it
+    5- Uniform Interface: Resources are identified in request, transfered data is decoupled from db schema
+            Self-descriptive message links to further resources.
+    6- Code on demand(optional): Executable code should be transfered.
