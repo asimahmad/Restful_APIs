@@ -38,3 +38,12 @@ Restful APIs are stateless backends
 
 
     It has one branch to understand the concept of merging branches on gitHub.
+
+
+    create branch:  git branches branch_name
+    Checkout branch: git checkout branch_name
+    commit the changes to the new branch and push it to the gitHub reop, now you can see the new branch over gitHub.
+    now merge new branch to master branch: first checkout to master branch then 
+    use command: git merge branch_name
+    now you can see the chnages to local master reop but to see the changes to remote, you have to push the master branch.
+    
