@@ -12,8 +12,13 @@ router.get('/', (req, res, next) =>{
 
 
 router.post('/', (req, res, next) =>{
+    const product = {
+        name: req.body.name,
+        price: req.body.price
+    };
     res.status(201).json({
-        message: 'Handling POST request to /products'
+        message: 'Handling POST request to /products',
+        createProduct: product
     });
 });
 

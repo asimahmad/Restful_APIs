@@ -47,3 +47,23 @@ Restful APIs are stateless backends
     use command: git merge branch_name
     now you can see the chnages to local master reop but to see the changes to remote, you have to push the master branch.
     
+    to delete branch:
+    from local: git branch -d branch_name
+    from remote: git push origin --delete branch_name
+
+
+    for parsing the body and handling cors in restful APIs
+    first install the parse: npm install --save body-parser
+    body-parser does not support file parsing but it does support URL and json parsing.
+
+
+
+    CORS: Cross-Origin-Resource-Sharing
+
+    Cors-error: 
+    traditionally we Client and server have the same localhost like(3000), then they will successed.
+    but if they have different localhost origins and even the port numbers of on localhost are consedered different.
+    in this case trying to request on the server for resources will fail then in that case e can actually 
+    disable this when sending some headers from the server to the client that finally tells the browser that running
+    the client application, which allows client to have the access.
+    we should add the headers before we reach to our routes in app.js file
