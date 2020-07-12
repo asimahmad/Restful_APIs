@@ -8,8 +8,10 @@ const mongoose = require('mongoose');
 mongoose.connect('mongodb+srv://Asim123:Asim123@restapis.bamo9.mongodb.net/RestAPIs?retryWrites=true&w=majority', 
 {
     useNewUrlParser: true
+    // useMongoClient: true
 }
 );
+mongoose.Promise = global.Promise; // this line will disable the warning message from cmd for mongose
 // when we don't want to hard code the password 
 //mongoose.connect('mongodb+srv://asim007:' + process.env.MONGO.ATLAS_PW + '@cluster0.oh7p5.mongodb.net/<dbname>?retryWrites=true&w=majority')
 app.use(morgan('dev'));  // app.use(morgan())
