@@ -67,3 +67,7 @@ Restful APIs are stateless backends
     disable this when sending some headers from the server to the client that finally tells the browser that running
     the client application, which allows client to have the access.
     we should add the headers before we reach to our routes in app.js file
+
+
+    for database use mongoose
+    npm install --save mongoose

@@ -2,7 +2,16 @@ const express = require('express');
 const app = express();
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+//const dbName = require('./api/models/product');
 
+mongoose.connect('mongodb+srv://Asim123:Asim123@restapis.bamo9.mongodb.net/RestAPIs?retryWrites=true&w=majority', 
+{
+    useNewUrlParser: true
+}
+);
+// when we don't want to hard code the password 
+//mongoose.connect('mongodb+srv://asim007:' + process.env.MONGO.ATLAS_PW + '@cluster0.oh7p5.mongodb.net/<dbname>?retryWrites=true&w=majority')
 app.use(morgan('dev'));  // app.use(morgan())
 app.use(bodyParser.urlencoded({extended: false})); // parsing for URLencoded data.
 app.use(bodyParser.json()); // parsing for json data.
